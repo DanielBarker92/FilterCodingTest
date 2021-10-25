@@ -15,8 +15,9 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\FilterCodingTest.Core\FilterCodingTest.Filter.Core.csproj" />
     <ProjectReference Include="..\FilterCodingTest.Filter.Core\FilterCodingTest.Filter.Core.csproj" />
+    <ProjectReference Include="..\FilterCodingTest.Sort.BubbleSort\FilterCodingTest.Sort.BubbleSort.csproj" />
+    <ProjectReference Include="..\FilterCodingTest.Sort.Interfaces\FilterCodingTest.Sort.Interfaces.csproj" />
   </ItemGroup>
 
 </Project>

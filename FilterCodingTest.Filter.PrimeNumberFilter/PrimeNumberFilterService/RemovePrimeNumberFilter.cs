@@ -9,7 +9,11 @@ namespace FilterCodingTest.Filter.PrimeNumberFilterService
 {
     public class RemovePrimeNumberFilter : INumberFilter
     {
-
+        /// <summary>
+        ///     Removes all prime numbers from a given list of number and returns everything else
+        /// </summary>
+        /// <param name="numbers"> numbers to remove primes from </param>
+        /// <returns> List of non-prime numbers </returns>
         public IEnumerable<int> ApplyFilter(IEnumerable<int> numbers)
             => numbers.Where(s => !s.IsPrime());
     }

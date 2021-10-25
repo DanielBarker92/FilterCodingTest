@@ -11,7 +11,7 @@
   <ItemGroup>
     <ProjectReference Include="..\FilterCodingTest.Filter.Interfaces\FilterCodingTest.Filter.Interfaces.csproj" />
     <ProjectReference Include="..\FilterCodingTest.Filter.PrimeNumberFilter\FilterCodingTest.Filter.PrimeNumberFilter.csproj" />
-    <ProjectReference Include="..\FilterCodingTest.PrimeNumberFilter\FilterCodingTest.Filter.PrimeNumberFilter.csproj" />
+    <ProjectReference Include="..\FilterCodingTest.Sort.BubbleSort\FilterCodingTest.Sort.BubbleSort.csproj" />
   </ItemGroup>
   <ItemGroup>
     <None Update="host.json">

@@ -1,10 +1,9 @@
 ﻿using FilterCodingTest.Filter.Interfaces;
 using FilterCodingTest.Filter.PrimeNumberFilterService;
+using FilterCodingTest.Sort.BubbleSort;
+using FilterCodingTest.Sort.Interfaces;
 using Microsoft.Azure.Functions.Extensions.DependencyInjection;
 using Microsoft.Extensions.DependencyInjection;
-using System;
-using System.Collections.Generic;
-using System.Text;
 
 [assembly: FunctionsStartup(typeof(FilterNumberCodingTest.Startup))]
 
@@ -15,6 +14,8 @@ namespace FilterNumberCodingTest
         public override void Configure(IFunctionsHostBuilder builder)
         {
             builder.Services.AddSingleton<INumberFilter, RemovePrimeNumberFilter>();
+            builder.Services.AddSingleton<ISort, BubbleSort>();
+
         }
     }
 }
