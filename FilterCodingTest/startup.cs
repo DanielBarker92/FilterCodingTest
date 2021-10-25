@@ -1,5 +1,5 @@
-﻿using FilterNumberCodingTest.Interfaces;
-using FilterNumberCodingTest.PrimeNumberFilterService;
+﻿using FilterCodingTest.Filter.Interfaces;
+using FilterCodingTest.Filter.PrimeNumberFilterService;
 using Microsoft.Azure.Functions.Extensions.DependencyInjection;
 using Microsoft.Extensions.DependencyInjection;
 using System;

@@ -15,7 +15,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\FilterCodingTest.Core\FilterCodingTest.Core.csproj" />
+    <ProjectReference Include="..\FilterCodingTest.Core\FilterCodingTest.Filter.Core.csproj" />
+    <ProjectReference Include="..\FilterCodingTest.Filter.Core\FilterCodingTest.Filter.Core.csproj" />
   </ItemGroup>
 
 </Project>

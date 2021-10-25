@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace FilterCodingTest.Core.Extensions
+namespace FilterCodingTest.Filter.Core.Extensions
 {
     public static class IntExtensions
     {

@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace FilterNumberCodingTest.Interfaces
+namespace FilterCodingTest.Filter.Interfaces
 {
     public interface INumberFilter
     {

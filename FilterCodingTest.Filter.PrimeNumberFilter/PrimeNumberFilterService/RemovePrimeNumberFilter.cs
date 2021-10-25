@@ -1,11 +1,11 @@
-﻿using FilterCodingTest.Core.Extensions;
-using FilterNumberCodingTest.Interfaces;
+﻿using FilterCodingTest.Filter.Core.Extensions;
 using System;
 using System.Linq;
 using System.Collections.Generic;
 using System.Text;
+using FilterCodingTest.Filter.Interfaces;
 
-namespace FilterNumberCodingTest.PrimeNumberFilterService
+namespace FilterCodingTest.Filter.PrimeNumberFilterService
 {
     public class RemovePrimeNumberFilter : INumberFilter
     {

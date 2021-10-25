@@ -9,7 +9,9 @@
     <PackageReference Include="Microsoft.NET.Sdk.Functions" Version="3.0.1" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\FilterCodingTest.PrimeNumberFilter\FilterCodingTest.PrimeNumberFilter.csproj" />
+    <ProjectReference Include="..\FilterCodingTest.Filter.Interfaces\FilterCodingTest.Filter.Interfaces.csproj" />
+    <ProjectReference Include="..\FilterCodingTest.Filter.PrimeNumberFilter\FilterCodingTest.Filter.PrimeNumberFilter.csproj" />
+    <ProjectReference Include="..\FilterCodingTest.PrimeNumberFilter\FilterCodingTest.Filter.PrimeNumberFilter.csproj" />
   </ItemGroup>
   <ItemGroup>
     <None Update="host.json">

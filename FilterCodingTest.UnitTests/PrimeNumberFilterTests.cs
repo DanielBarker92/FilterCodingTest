@@ -2,7 +2,7 @@ using System;
 using Xunit;
 using System.Collections.Generic;
 using FluentAssertions;
-using FilterCodingTest.Core.Extensions;
+using FilterCodingTest.Filter.Core.Extensions;
 
 namespace FilterCodingTest.UnitTests
 {

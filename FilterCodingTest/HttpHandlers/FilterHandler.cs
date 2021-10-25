@@ -8,7 +8,7 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.Logging;
 using Newtonsoft.Json;
 using System.Linq;
-using FilterNumberCodingTest.Interfaces;
+using FilterCodingTest.Filter.Interfaces;
 
 namespace FilterNumberCodingTest
 {
