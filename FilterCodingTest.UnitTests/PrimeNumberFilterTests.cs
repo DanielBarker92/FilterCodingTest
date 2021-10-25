@@ -1,81 +1,71 @@
 using System;
 using Xunit;
-using FilterNumberCodingTest.PrimeNumberFilterService;
 using System.Collections.Generic;
 using FluentAssertions;
+using FilterCodingTest.Core.Extensions;
 
 namespace FilterCodingTest.UnitTests
 {
     public class RemovePrimeNumberFilterTests
     {
         [Fact]
-        public void ApplyFilter_InputContains0_ShouldRemove0()
+        public void IsPrime_Input0_ShouldBeFalse()
         {
             //Arrange
-            var removePrimeNumberFilter = new RemovePrimeNumberFilter();
-            var inputList = new[] { 6, 12, 0, 16 };
 
             //Act
-            var actualResults = removePrimeNumberFilter.ApplyFilter(inputList);
+            var actualResults = 0.IsPrime();
 
             //Assert
-            actualResults.Should().Equal(new[] { 6, 12, 16 });
+            actualResults.Should().BeFalse();
         }
 
         [Fact]
-        public void ApplyFilter_InputContains1_ShouldRemove1()
+        public void IsPrime_Input1_ShouldBeFalse()
         {
             //Arrange
-            var removePrimeNumberFilter = new RemovePrimeNumberFilter();
-            var inputList = new[] { 1 }; 
 
             //Act
-            var actualResults = removePrimeNumberFilter.ApplyFilter(inputList);
+            var actualResults = 1.IsPrime();
 
             //Assert
-            actualResults.Should().Equal(new[] { 1 });
+            actualResults.Should().BeFalse();
         }
 
         [Fact]
-        public void ApplyFilter_InputContainsNegatives_ShouldRemoveNegatives()
+        public void IsPrime_InputNegative_ShouldBeFalse()
         {
             //Arrange
-            var removePrimeNumberFilter = new RemovePrimeNumberFilter();
-            var inputList = new[] { -16, -3, 4, 12 };
 
             //Act
-            var actualResults = removePrimeNumberFilter.ApplyFilter(inputList);
+            var actualResults = (-34).IsPrime();
 
             //Assert
-            actualResults.Should().Equal(new[] { 4, 12 });
+            actualResults.Should().BeFalse();
         }
 
         [Fact]
-        public void ApplyFilter_InputEmpty_ShouldReturnEmpty()
+        public void IsPrime_InputPrime_ShouldBeTrue()
         {
             //Arrange
-            var removePrimeNumberFilter = new RemovePrimeNumberFilter();
-            var inputList = new List<int>();
 
             //Act
-            var actualResults = removePrimeNumberFilter.ApplyFilter(inputList);
+            var actualResults = 5.IsPrime();
 
             //Assert
-            actualResults.Should().BeEmpty();
+            actualResults.Should().BeTrue();
         }
 
         [Fact]
-        public void ApplyFilter_ContainsMultiplePrimeNumbers_ShouldReturnNonPrime()
+        public void IsPrime_InputNotPrime_ShouldBeFalse()
         {
             //Arrange
-            var removePrimeNumberFilter = new RemovePrimeNumberFilter();
-            var inputList = new[] { 43, 57, 3, 7, 60, 99, 96, 97 };
 
             //Act
-            var actualResults = removePrimeNumberFilter.ApplyFilter(inputList);
+            var actualResults = 4.IsPrime();
 
             //Assert
-            actualResults.Should().Equal(new[] { 57, 60, 99, 96 });
+            actualResults.Should().BeFalse();
         }
     }
 }

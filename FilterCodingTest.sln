@@ -9,7 +9,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FilterCodingTest.Interfaces
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FilterCodingTest.PrimeNumberFilter", "FilterCodingTest.PrimeNumberFilter\FilterCodingTest.PrimeNumberFilter.csproj", "{A684026D-98FC-414F-BFC8-300D59EF1342}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FilterCodingTest.UnitTests", "FilterCodingTest.UnitTests\FilterCodingTest.UnitTests.csproj", "{BEC508BA-98B5-45CC-9CD9-65BDED1095F5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FilterCodingTest.UnitTests", "FilterCodingTest.UnitTests\FilterCodingTest.UnitTests.csproj", "{BEC508BA-98B5-45CC-9CD9-65BDED1095F5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FilterCodingTest.Core", "FilterCodingTest.Core\FilterCodingTest.Core.csproj", "{536825F9-255E-424F-96BF-A01270CD4AC0}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{BEC508BA-98B5-45CC-9CD9-65BDED1095F5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BEC508BA-98B5-45CC-9CD9-65BDED1095F5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BEC508BA-98B5-45CC-9CD9-65BDED1095F5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{536825F9-255E-424F-96BF-A01270CD4AC0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{536825F9-255E-424F-96BF-A01270CD4AC0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{536825F9-255E-424F-96BF-A01270CD4AC0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{536825F9-255E-424F-96BF-A01270CD4AC0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

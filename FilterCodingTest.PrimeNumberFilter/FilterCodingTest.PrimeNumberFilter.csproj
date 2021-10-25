@@ -5,6 +5,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\FilterCodingTest.Core\FilterCodingTest.Core.csproj" />
     <ProjectReference Include="..\FilterCodingTest.Interfaces\FilterCodingTest.Interfaces.csproj" />
   </ItemGroup>
 
